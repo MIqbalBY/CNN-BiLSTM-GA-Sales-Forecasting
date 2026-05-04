@@ -91,7 +91,7 @@ Input: X ∈ ℝ⁸  (8-week sliding window)
 
 ## Pipeline Notebook
 
-Pipeline terdiri dari 15 notebook terstruktur:
+Pipeline terdiri dari 16 notebook terstruktur:
 
 | No | Notebook | Deskripsi |
 | --- | --- | --- |
@@ -142,9 +142,8 @@ Pipeline terdiri dari 15 notebook terstruktur:
 
 ```text
 CNN-BiLSTM-GA-Sales-Forecasting/
-├── data/               # Dataset penjualan mingguan PT. XYZ (2019–2025)
-├── notebook/           # 19 notebook pipeline (00–18)
-├── markdown/           # Dokumen tugas akhir & pipeline spec
+├── data/               # Dataset
+├── notebook/           # 16 notebook pipeline (00–15)
 ├── .gitignore
 └── README.md
 ```
