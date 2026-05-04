@@ -10,7 +10,7 @@ Peramalan penjualan mingguan produk mie instan dari produsen ke distributor meng
 ## Identitas
 
 | | |
-|---|---|
+| --- | --- |
 | **Judul** | Peramalan Penjualan Produk Mie Instan Menggunakan Model Hibrida CNN–BiLSTM dengan Optimasi Genetic Algorithm |
 | **Penulis** | Muhammad Iqbal Baiduri Yamani |
 | **NRP** | 5026221103 |
@@ -25,6 +25,7 @@ Peramalan penjualan mingguan produk mie instan dari produsen ke distributor meng
 Industri *Fast Moving Consumer Goods* (FMCG) menghadapi tantangan dalam memprediksi permintaan mingguan secara akurat akibat pola yang kompleks dan dinamis. Kesalahan peramalan berujung pada kelebihan stok (meningkatkan biaya penyimpanan) atau kekurangan stok (kehilangan penjualan). Teknik konvensional tidak memadai untuk menangkap pola nonlinier dalam data *time-series*.
 
 Penelitian ini mengusulkan model hibrida **CNN-BiLSTM** yang disempurnakan melalui **Genetic Algorithm** untuk meramalkan penjualan mingguan FMCG dari produsen ke distributor. Pipeline meliputi:
+
 - Pengumpulan data penjualan mingguan 2019–2025
 - Pembersihan data dan penanganan outlier via IQR clipping
 - Transformasi *time-series* ke format *supervised learning* menggunakan *sliding window* lag-8
@@ -38,7 +39,7 @@ Penelitian ini mengusulkan model hibrida **CNN-BiLSTM** yang disempurnakan melal
 
 ## Arsitektur Model
 
-```
+```text
 Input: X ∈ ℝ⁸  (8-week sliding window)
          │
   ┌──────▼────────────────────────────────────────────┐
@@ -75,7 +76,7 @@ Input: X ∈ ℝ⁸  (8-week sliding window)
 **Hiperparameter yang dioptimasi Genetic Algorithm:**
 
 | Parameter | Deskripsi |
-|---|---|
+| --- | --- |
 | `filters` | Jumlah filter Conv1D |
 | `kernel_size` | Ukuran kernel Conv1D |
 | `pool_size` | Ukuran pool MaxPooling1D |
@@ -93,7 +94,7 @@ Input: X ∈ ℝ⁸  (8-week sliding window)
 Pipeline terdiri dari 19 notebook terstruktur:
 
 | No | Notebook | Deskripsi |
-|---|---|---|
+| --- | --- | --- |
 | 00 | Project Scope & Reproducibility | Setup seed, environment lock |
 | 01 | Data Load & Schema Validation | Load data mentah, validasi kolom |
 | 02 | Time Index Integrity Audit | Cek duplikasi & missing week |
@@ -116,17 +117,19 @@ Pipeline terdiri dari 19 notebook terstruktur:
 ## Eksperimen & Evaluasi
 
 **Model yang dibandingkan:**
+
 - CNN · CNN+GA
 - BiLSTM · BiLSTM+GA
 - CNN-BiLSTM · **CNN-BiLSTM+GA** ← model utama
 
 **Proporsi split data:**
+
 - 60:40 · 70:30 · 80:20 · 90:10
 
 **Metrik evaluasi:**
 
 | Metrik | Keterangan |
-|---|---|
+| --- | --- |
 | MAPE | Metrik utama pemilihan model terbaik |
 | MAE | Mean Absolute Error |
 | RMSE | Root Mean Square Error |
@@ -136,7 +139,7 @@ Pipeline terdiri dari 19 notebook terstruktur:
 
 ## Struktur Repository
 
-```
+```text
 CNN-BiLSTM-GA-Sales-Forecasting/
 ├── data/               # Dataset penjualan mingguan PT. XYZ (2019–2025)
 ├── notebook/           # 19 notebook pipeline (00–18)
@@ -144,9 +147,3 @@ CNN-BiLSTM-GA-Sales-Forecasting/
 ├── .gitignore
 └── README.md
 ```
-
----
-
-## Lisensi
-
-Lihat [LICENSE](LICENSE).
