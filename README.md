@@ -26,12 +26,12 @@ Industri *Fast Moving Consumer Goods* (FMCG) menghadapi tantangan dalam mempredi
 
 Penelitian ini mengusulkan model hibrida **CNN-BiLSTM** yang disempurnakan melalui **Genetic Algorithm** untuk meramalkan penjualan mingguan FMCG dari produsen ke distributor. Pipeline meliputi:
 
-- Pengumpulan data penjualan mingguan 2019–2025
-- Pembersihan data dan penanganan outlier via IQR clipping
+- Validasi skema data dan audit integritas indeks waktu
+- EDA univariat serta penanganan *outlier* dengan IQR clipping
 - Transformasi *time-series* ke format *supervised learning* menggunakan *sliding window* lag-8
-- CNN untuk ekstraksi pola jangka pendek, BiLSTM untuk pola jangka panjang
-- GA + K-Fold Cross Validation (k=5) untuk optimasi hiperparameter
-- Evaluasi dengan RMSE, MAE, MAPE, dan R²
+- Pembentukan split 60:40, 70:30, 80:20, dan 90:10 serta *walk-forward cross validation*
+- Eksperimen CNN, BiLSTM, CNN-BiLSTM, dan variannya dengan optimasi *Genetic Algorithm*
+- Komparasi dengan baseline klasik, ranking berbasis MAPE, serta evaluasi menggunakan MAE, RMSE, dan R²
 
 **Kata kunci:** CNN-BiLSTM · FMCG · Genetic Algorithm · Peramalan · Rantai Pasok · Time Series
 
@@ -91,7 +91,7 @@ Input: X ∈ ℝ⁸  (8-week sliding window)
 
 ## Pipeline Notebook
 
-Pipeline terdiri dari 19 notebook terstruktur:
+Pipeline terdiri dari 15 notebook terstruktur:
 
 | No | Notebook | Deskripsi |
 | --- | --- | --- |
@@ -121,6 +121,7 @@ Pipeline terdiri dari 19 notebook terstruktur:
 - CNN · CNN+GA
 - BiLSTM · BiLSTM+GA
 - CNN-BiLSTM · **CNN-BiLSTM+GA** ← model utama
+- Baseline klasik: Naive · Moving Average · ARIMA · Prophet · XGBoost
 
 **Proporsi split data:**
 
