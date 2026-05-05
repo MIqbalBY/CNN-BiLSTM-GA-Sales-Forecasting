@@ -1,0 +1,54 @@
+{
+  "notebook": "01 - Data Load and Schema Validation",
+  "timestamp": "2026-05-05T20:24:15.770319",
+  "file": "C:\\Users\\mikba\\Downloads\\Semester 7\\Pra Tugas Akhir (Retno Aulia Vinarti)\\Repository\\CNN-BiLSTM-GA-Sales-Forecasting\\data\\Dataset_Raw_Top 1 Sales 2019 - 2025.xlsx",
+  "sheet_used": "Target_Product_Weekly",
+  "shape": {
+    "rows": 364,
+    "cols": 3
+  },
+  "columns": [
+    "Year",
+    "Week",
+    "Grand Total"
+  ],
+  "required_cols": [
+    "Year",
+    "Week",
+    "Grand Total"
+  ],
+  "col_checks": {
+    "Year": true,
+    "Week": true,
+    "Grand Total": true
+  },
+  "missing_values": {
+    "Year": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "Week": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "Grand Total": {
+      "count": 0,
+      "pct": 0.0
+    }
+  },
+  "year_range": [
+    2019,
+    2025
+  ],
+  "week_range": [
+    1,
+    52
+  ],
+  "grand_total_stats": {
+    "min": 1305.0,
+    "max": 112040.0,
+    "mean": 53322.9,
+    "std": 18426.24
+  },
+  "schema_status": "VALID"
+}
