@@ -1,0 +1,89 @@
+{
+  "project": {
+    "title": "Peramalan Penjualan Produk Mie Instan Menggunakan Model Hibrida CNN-BiLSTM dengan Optimasi Genetic Algorithm",
+    "title_en": "Instant Noodle Sales Forecasting Using Hybrid CNN-BiLSTM Model Optimized with Genetic Algorithm",
+    "case_study": "PT. XYZ Banjarmasin",
+    "course_code": "ES234733",
+    "institution": "Institut Teknologi Sepuluh Nopember (ITS) Surabaya",
+    "department": "Departemen Sistem Informasi, FTEIC"
+  },
+  "author": {
+    "name": "Muhammad Iqbal Baiduri Yamani",
+    "nrp": "5026221103",
+    "supervisor": "Edwin Riksakomara, S.Kom., M.T.",
+    "supervisor_nip": "196907252003121001"
+  },
+  "experiment": {
+    "global_seed": 42,
+    "run_date": "2026-05-05 20:06:07",
+    "python_version": "3.12.13",
+    "tensorflow_version": "2.21.0",
+    "numpy_version": "2.4.4",
+    "pandas_version": "3.0.2",
+    "sklearn_version": "1.8.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "data": {
+    "domain": "FMCG Weekly Sales (Manufacturer to Distributor)",
+    "product": "Mie Instan — Top-1 SKU by Revenue",
+    "granularity": "Weekly",
+    "period": "2019–2025",
+    "target_column": "Grand Total",
+    "n_weeks_approx": 364,
+    "file_name": "Dataset_Raw_Top 1 Sales 2019 - 2025.xlsx"
+  },
+  "methodology": {
+    "model": "CNN-BiLSTM + GA",
+    "architecture": "Conv1D → MaxPool1D → Flatten → BiLSTM → Dropout → Dense",
+    "sliding_window_tau": 8,
+    "forecast_horizon": 1,
+    "outlier_handling": "IQR Clipping (Q1 - 1.5*IQR, Q3 + 1.5*IQR)",
+    "splits": [
+      "60:40",
+      "70:30",
+      "80:20",
+      "90:10"
+    ],
+    "validation": "Walk-Forward CV (k=5, expanding window)",
+    "ga_hyperparameters": [
+      "filters",
+      "kernel_size",
+      "pool_size",
+      "bilstm_units",
+      "dropout_rate",
+      "learning_rate",
+      "batch_size"
+    ],
+    "metrics": [
+      "MAPE",
+      "MAE",
+      "RMSE",
+      "R²"
+    ],
+    "primary_metric": "MAPE",
+    "comparison_models": [
+      "CNN",
+      "CNN+GA",
+      "BiLSTM",
+      "BiLSTM+GA",
+      "CNN-BiLSTM",
+      "CNN-BiLSTM+GA",
+      "Naive",
+      "Moving Average",
+      "ARIMA",
+      "Prophet",
+      "XGBoost"
+    ]
+  },
+  "hardware": {
+    "cpu_count": 20,
+    "cpu_info": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "gpu_count": 0,
+    "gpu_names": [],
+    "tf_cuda_support": false,
+    "gpu_available": false,
+    "compute_mode": "CPU"
+  },
+  "pipeline_version": "1.0.0",
+  "notebook": "00 - Project Scope and Reproducibility"
+}
