@@ -16,8 +16,12 @@
   "n_outliers": 6,
   "skewness": 0.4718,
   "kurtosis": 0.4369,
+  "adf_pvalue": 0.613278,
+  "is_stationary": false,
   "figures": {
     "line_plot": "outputs/figures/nb03_line_plot.png",
+    "rolling_stats": "outputs/figures/nb03_rolling_stats.png",
+    "acf_pacf": "outputs/figures/nb03_acf_pacf.png",
     "dist_boxplot": "outputs/figures/nb03_dist_boxplot.png"
   }
 }
