@@ -1,0 +1,23 @@
+{
+  "notebook": "NB03 \u2014 EDA Univariate Profile",
+  "target_column": "Grand Total",
+  "n_observations": 364,
+  "total_sum_karton": 19409534,
+  "mean": 53322.8956,
+  "median": 51108.5,
+  "std": 18426.2445,
+  "min": 1305,
+  "max": 112040,
+  "q1": 40078.75,
+  "q3": 65113.5,
+  "iqr": 25034.75,
+  "lower_fence": 2526.625,
+  "upper_fence": 102665.625,
+  "n_outliers": 6,
+  "skewness": 0.4718,
+  "kurtosis": 0.4369,
+  "figures": {
+    "line_plot": "outputs/figures/nb03_line_plot.png",
+    "dist_boxplot": "outputs/figures/nb03_dist_boxplot.png"
+  }
+}
