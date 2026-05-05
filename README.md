@@ -3,7 +3,8 @@
 > **Tugas Akhir – ES234733**
 > Institut Teknologi Sepuluh Nopember · Departemen Sistem Informasi · FTEIC
 
-Peramalan penjualan mingguan produk mie instan dari produsen ke distributor menggunakan model hibrida **CNN–BiLSTM** yang dioptimasi dengan **Genetic Algorithm (GA)**. Studi kasus: PT. XYZ Banjarmasin, data 2019–2025.
+Peramalan penjualan mingguan produk mie instan dari produsen ke distributor menggunakan model hibrida **CNN–BiLSTM**
+yang dioptimasi dengan **Genetic Algorithm (GA)**. Studi kasus: PT. XYZ Banjarmasin, data 2019–2025.
 
 ---
 
@@ -22,9 +23,13 @@ Peramalan penjualan mingguan produk mie instan dari produsen ke distributor meng
 
 ## Abstrak
 
-Industri *Fast Moving Consumer Goods* (FMCG) menghadapi tantangan dalam memprediksi permintaan mingguan secara akurat akibat pola yang kompleks dan dinamis. Kesalahan peramalan berujung pada kelebihan stok (meningkatkan biaya penyimpanan) atau kekurangan stok (kehilangan penjualan). Teknik konvensional tidak memadai untuk menangkap pola nonlinier dalam data *time-series*.
+Industri *Fast Moving Consumer Goods* (FMCG) menghadapi tantangan dalam memprediksi permintaan mingguan
+secara akurat akibat pola yang kompleks dan dinamis. Kesalahan peramalan berujung pada kelebihan stok
+(meningkatkan biaya penyimpanan) atau kekurangan stok (kehilangan penjualan). Teknik konvensional tidak
+memadai untuk menangkap pola nonlinier dalam data *time-series*.
 
-Penelitian ini mengusulkan model hibrida **CNN-BiLSTM** yang disempurnakan melalui **Genetic Algorithm** untuk meramalkan penjualan mingguan FMCG dari produsen ke distributor. Pipeline meliputi:
+Penelitian ini mengusulkan model hibrida **CNN-BiLSTM** yang disempurnakan melalui **Genetic Algorithm**
+untuk meramalkan penjualan mingguan FMCG dari produsen ke distributor. Pipeline meliputi:
 
 - Validasi skema data dan audit integritas indeks waktu
 - EDA univariat serta penanganan *outlier* dengan IQR clipping

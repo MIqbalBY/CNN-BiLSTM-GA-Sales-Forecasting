@@ -1,0 +1,26 @@
+{
+  "notebook": "NB05 — Sliding Window Supervised Framing",
+  "tau": 8,
+  "horizon": 1,
+  "n_series": 364,
+  "n_samples": 356,
+  "X_shape": [
+    356,
+    8
+  ],
+  "y_shape": [
+    356
+  ],
+  "X_dtype": "float64",
+  "y_dtype": "float64",
+  "temporal_shuffle": false,
+  "y_min": 2526.625,
+  "y_max": 102665.625,
+  "y_mean": 53274.1987,
+  "y_std": 18269.9219,
+  "source_log": "logs/outlier_handling.json",
+  "artefak": {
+    "supervised_npz": "outputs/splits/supervised.npz",
+    "window_overview_fig": "outputs/figures/nb05_supervised_window_overview.png"
+  }
+}
