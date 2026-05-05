@@ -194,11 +194,11 @@ Input: dataset supervised.
 Proses: buat split 60:40, 70:30, 80:20, 90:10.
 Output: artefak train-test per rasio.
 Checklist:
-- [ ] Split 60:40 selesai.
-- [ ] Split 70:30 selesai.
-- [ ] Split 80:20 selesai.
-- [ ] Split 90:10 selesai.
-- [ ] Ringkasan ukuran sample tersimpan.
+- [x] Split 60:40 selesai.
+- [x] Split 70:30 selesai.
+- [x] Split 80:20 selesai.
+- [x] Split 90:10 selesai.
+- [x] Ringkasan ukuran sample tersimpan.
 
 ### Notebook 07 - Walk-Forward CV Builder
 Input: train set dari tiap split.

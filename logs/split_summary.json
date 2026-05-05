@@ -1,0 +1,111 @@
+{
+  "notebook": "06 - Split Builder for All Ratios",
+  "source_file": "supervised.npz",
+  "n_samples_total": 356,
+  "TAU": 8,
+  "HORIZON": 1,
+  "global_seed": 42,
+  "splits": {
+    "60:40": {
+      "file": "split_60_40.npz",
+      "train_ratio": 0.6,
+      "n_total": 356,
+      "n_train": 213,
+      "n_test": 143,
+      "X_train_shape": [
+        213,
+        8
+      ],
+      "y_train_shape": [
+        213
+      ],
+      "X_test_shape": [
+        143,
+        8
+      ],
+      "y_test_shape": [
+        143
+      ],
+      "y_train_mean": 62163.623239436616,
+      "y_train_std": 17260.57301774032,
+      "y_test_mean": 40033.307692307695,
+      "y_test_std": 9704.780595604516
+    },
+    "70:30": {
+      "file": "split_70_30.npz",
+      "train_ratio": 0.7,
+      "n_total": 356,
+      "n_train": 249,
+      "n_test": 107,
+      "X_train_shape": [
+        249,
+        8
+      ],
+      "y_train_shape": [
+        249
+      ],
+      "X_test_shape": [
+        107,
+        8
+      ],
+      "y_test_shape": [
+        107
+      ],
+      "y_train_mean": 58624.61345381526,
+      "y_train_std": 18423.959299745246,
+      "y_test_mean": 40823.233644859814,
+      "y_test_std": 9949.490865271466
+    },
+    "80:20": {
+      "file": "split_80_20.npz",
+      "train_ratio": 0.8,
+      "n_total": 356,
+      "n_train": 284,
+      "n_test": 72,
+      "X_train_shape": [
+        284,
+        8
+      ],
+      "y_train_shape": [
+        284
+      ],
+      "X_test_shape": [
+        72,
+        8
+      ],
+      "y_test_shape": [
+        72
+      ],
+      "y_train_mean": 56440.96038732395,
+      "y_train_std": 18645.52829345607,
+      "y_test_mean": 40783.083333333336,
+      "y_test_std": 9138.561038487771
+    },
+    "90:10": {
+      "file": "split_90_10.npz",
+      "train_ratio": 0.9,
+      "n_total": 356,
+      "n_train": 320,
+      "n_test": 36,
+      "X_train_shape": [
+        320,
+        8
+      ],
+      "y_train_shape": [
+        320
+      ],
+      "X_test_shape": [
+        36,
+        8
+      ],
+      "y_test_shape": [
+        36
+      ],
+      "y_train_mean": 54712.43671875,
+      "y_train_std": 18513.36009405288,
+      "y_test_mean": 40489.86111111111,
+      "y_test_std": 8506.978266735485
+    }
+  },
+  "figure": "nb06_split_overview.png"
+}
