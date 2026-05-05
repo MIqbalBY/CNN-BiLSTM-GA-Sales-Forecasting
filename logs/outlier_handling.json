@@ -1,0 +1,82 @@
+{
+  "notebook": "NB04 — Outlier Handling IQR Clipping",
+  "method": "IQR Clipping (Winsorization)",
+  "q1": 40078.75,
+  "q3": 65113.5,
+  "iqr": 25034.75,
+  "lower_fence": 2526.625,
+  "upper_fence": 102665.625,
+  "n_outliers": 6,
+  "outlier_detail": [
+    {
+      "index": 22,
+      "year": 2019,
+      "week": 23,
+      "original_value": 1305,
+      "clipped_value": 2526.625,
+      "side": "below"
+    },
+    {
+      "index": 103,
+      "year": 2020,
+      "week": 52,
+      "original_value": 108856,
+      "clipped_value": 102665.625,
+      "side": "above"
+    },
+    {
+      "index": 168,
+      "year": 2022,
+      "week": 13,
+      "original_value": 111217,
+      "clipped_value": 102665.625,
+      "side": "above"
+    },
+    {
+      "index": 189,
+      "year": 2022,
+      "week": 34,
+      "original_value": 107818,
+      "clipped_value": 102665.625,
+      "side": "above"
+    },
+    {
+      "index": 194,
+      "year": 2022,
+      "week": 39,
+      "original_value": 112040,
+      "clipped_value": 102665.625,
+      "side": "above"
+    },
+    {
+      "index": 205,
+      "year": 2022,
+      "week": 50,
+      "original_value": 104036,
+      "clipped_value": 102665.625,
+      "side": "above"
+    }
+  ],
+  "stats_before": {
+    "mean": 53322.8956,
+    "median": 51108.5,
+    "std": 18426.2445,
+    "min": 1305.0,
+    "max": 112040.0,
+    "skewness": 0.4699,
+    "kurtosis": 0.4145
+  },
+  "stats_after": {
+    "mean": 53242.079,
+    "median": 51108.5,
+    "std": 18171.8741,
+    "min": 2526.625,
+    "max": 102665.625,
+    "skewness": 0.3885,
+    "kurtosis": 0.1329
+  },
+  "figures": {
+    "before_after_boxplot_dist": "outputs/figures/nb04_before_after_boxplot_dist.png",
+    "before_after_line": "outputs/figures/nb04_before_after_line.png"
+  }
+}
