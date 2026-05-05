@@ -1,6 +1,8 @@
 markdown/
 .markdownlintignore
 .vscode/
+SKILLS.md
+.markdownlint.json
 
 # Virtual environments
 .venv/
