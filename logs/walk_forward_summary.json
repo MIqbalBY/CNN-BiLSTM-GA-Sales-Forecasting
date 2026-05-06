@@ -1,0 +1,207 @@
+{
+  "notebook": "07 - Walk-Forward CV Builder",
+  "k_folds": 5,
+  "strategy": "walk-forward-expanding-window",
+  "splits": {
+    "60:40": {
+      "source_split": "outputs\\splits\\split_60_40.npz",
+      "saved_cv_artifact": "outputs\\cv_folds\\wf_cv_60_40.npz",
+      "n_train_total": 213,
+      "initial_train_size": 38,
+      "val_size": 35,
+      "k_folds": 5,
+      "folds": [
+        {
+          "fold": 1,
+          "train_size": 38,
+          "val_size": 35,
+          "train_end": 37,
+          "val_start": 38,
+          "val_end": 72
+        },
+        {
+          "fold": 2,
+          "train_size": 73,
+          "val_size": 35,
+          "train_end": 72,
+          "val_start": 73,
+          "val_end": 107
+        },
+        {
+          "fold": 3,
+          "train_size": 108,
+          "val_size": 35,
+          "train_end": 107,
+          "val_start": 108,
+          "val_end": 142
+        },
+        {
+          "fold": 4,
+          "train_size": 143,
+          "val_size": 35,
+          "train_end": 142,
+          "val_start": 143,
+          "val_end": 177
+        },
+        {
+          "fold": 5,
+          "train_size": 178,
+          "val_size": 35,
+          "train_end": 177,
+          "val_start": 178,
+          "val_end": 212
+        }
+      ]
+    },
+    "70:30": {
+      "source_split": "outputs\\splits\\split_70_30.npz",
+      "saved_cv_artifact": "outputs\\cv_folds\\wf_cv_70_30.npz",
+      "n_train_total": 249,
+      "initial_train_size": 44,
+      "val_size": 41,
+      "k_folds": 5,
+      "folds": [
+        {
+          "fold": 1,
+          "train_size": 44,
+          "val_size": 41,
+          "train_end": 43,
+          "val_start": 44,
+          "val_end": 84
+        },
+        {
+          "fold": 2,
+          "train_size": 85,
+          "val_size": 41,
+          "train_end": 84,
+          "val_start": 85,
+          "val_end": 125
+        },
+        {
+          "fold": 3,
+          "train_size": 126,
+          "val_size": 41,
+          "train_end": 125,
+          "val_start": 126,
+          "val_end": 166
+        },
+        {
+          "fold": 4,
+          "train_size": 167,
+          "val_size": 41,
+          "train_end": 166,
+          "val_start": 167,
+          "val_end": 207
+        },
+        {
+          "fold": 5,
+          "train_size": 208,
+          "val_size": 41,
+          "train_end": 207,
+          "val_start": 208,
+          "val_end": 248
+        }
+      ]
+    },
+    "80:20": {
+      "source_split": "outputs\\splits\\split_80_20.npz",
+      "saved_cv_artifact": "outputs\\cv_folds\\wf_cv_80_20.npz",
+      "n_train_total": 284,
+      "initial_train_size": 49,
+      "val_size": 47,
+      "k_folds": 5,
+      "folds": [
+        {
+          "fold": 1,
+          "train_size": 49,
+          "val_size": 47,
+          "train_end": 48,
+          "val_start": 49,
+          "val_end": 95
+        },
+        {
+          "fold": 2,
+          "train_size": 96,
+          "val_size": 47,
+          "train_end": 95,
+          "val_start": 96,
+          "val_end": 142
+        },
+        {
+          "fold": 3,
+          "train_size": 143,
+          "val_size": 47,
+          "train_end": 142,
+          "val_start": 143,
+          "val_end": 189
+        },
+        {
+          "fold": 4,
+          "train_size": 190,
+          "val_size": 47,
+          "train_end": 189,
+          "val_start": 190,
+          "val_end": 236
+        },
+        {
+          "fold": 5,
+          "train_size": 237,
+          "val_size": 47,
+          "train_end": 236,
+          "val_start": 237,
+          "val_end": 283
+        }
+      ]
+    },
+    "90:10": {
+      "source_split": "outputs\\splits\\split_90_10.npz",
+      "saved_cv_artifact": "outputs\\cv_folds\\wf_cv_90_10.npz",
+      "n_train_total": 320,
+      "initial_train_size": 55,
+      "val_size": 53,
+      "k_folds": 5,
+      "folds": [
+        {
+          "fold": 1,
+          "train_size": 55,
+          "val_size": 53,
+          "train_end": 54,
+          "val_start": 55,
+          "val_end": 107
+        },
+        {
+          "fold": 2,
+          "train_size": 108,
+          "val_size": 53,
+          "train_end": 107,
+          "val_start": 108,
+          "val_end": 160
+        },
+        {
+          "fold": 3,
+          "train_size": 161,
+          "val_size": 53,
+          "train_end": 160,
+          "val_start": 161,
+          "val_end": 213
+        },
+        {
+          "fold": 4,
+          "train_size": 214,
+          "val_size": 53,
+          "train_end": 213,
+          "val_start": 214,
+          "val_end": 266
+        },
+        {
+          "fold": 5,
+          "train_size": 267,
+          "val_size": 53,
+          "train_end": 266,
+          "val_start": 267,
+          "val_end": 319
+        }
+      ]
+    }
+  }
+}
