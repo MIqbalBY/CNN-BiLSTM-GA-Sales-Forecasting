@@ -1,5 +1,6 @@
 {
   "notebook": "07 - Walk-Forward CV Builder",
+  "timestamp": "2026-05-07T07:52:29",
   "k_folds": 5,
   "strategy": "walk-forward-expanding-window",
   "splits": {

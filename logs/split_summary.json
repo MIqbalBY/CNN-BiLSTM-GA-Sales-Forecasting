@@ -1,5 +1,7 @@
 {
   "notebook": "06 - Split Builder for All Ratios",
+  "timestamp": "2026-05-07T07:50:55",
+  "temporal_shuffle": false,
   "source_file": "supervised.npz",
   "n_samples_total": 356,
   "TAU": 8,
