@@ -1,6 +1,6 @@
 {
   "notebook": "NB05 — Sliding Window Supervised Framing",
-  "timestamp": "2026-05-07T07:45:10",
+  "timestamp": "2026-05-07T21:33:27",
   "tau": 8,
   "horizon": 1,
   "n_series": 364,
