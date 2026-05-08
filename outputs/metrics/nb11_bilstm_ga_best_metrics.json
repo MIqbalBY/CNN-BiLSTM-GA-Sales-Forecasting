@@ -1,0 +1,98 @@
+{
+  "notebook": "11 - BiLSTM + GA All Splits",
+  "timestamp": "2026-05-08T07:51:36",
+  "ga_config": {
+    "POP_SIZE": 6,
+    "N_GENERATIONS": 3,
+    "ELITE_SIZE": 2,
+    "TOURNAMENT_K": 3,
+    "CROSSOVER_RATE": 0.8,
+    "MUTATION_RATE": 0.25,
+    "FIXED_EPOCHS": 12,
+    "FINAL_RETRAIN_EPOCHS": 60
+  },
+  "search_space": {
+    "lstm_units": [
+      16,
+      32
+    ],
+    "dense_units": [
+      16,
+      32
+    ],
+    "dropout": [
+      0.1,
+      0.25
+    ],
+    "learning_rate": [
+      0.0005,
+      0.001
+    ],
+    "batch_size": [
+      16,
+      32
+    ]
+  },
+  "results": [
+    {
+      "split": "60:40",
+      "MAE_test": 7498.273656031469,
+      "RMSE_test": 10176.096336827532,
+      "MAPE_test": 34.290902056949804,
+      "R2_test": -0.0994892229741835,
+      "NB10_MAPE": 32.42514023237129,
+      "delta_MAPE": -1.865761824578513,
+      "improved": false,
+      "best_lstm_units": 16,
+      "best_dense_units": 16,
+      "best_dropout": 0.1,
+      "best_learning_rate": 0.0005,
+      "best_batch_size": 32
+    },
+    {
+      "split": "70:30",
+      "MAE_test": 7507.468896028037,
+      "RMSE_test": 10328.061401505833,
+      "MAPE_test": 37.66896143113735,
+      "R2_test": -0.07754621849310483,
+      "NB10_MAPE": 37.67476240998375,
+      "delta_MAPE": 0.005800978846401961,
+      "improved": true,
+      "best_lstm_units": 16,
+      "best_dense_units": 16,
+      "best_dropout": 0.1,
+      "best_learning_rate": 0.0005,
+      "best_batch_size": 32
+    },
+    {
+      "split": "80:20",
+      "MAE_test": 7064.946044921875,
+      "RMSE_test": 9682.758585596412,
+      "MAPE_test": 26.49234046754992,
+      "R2_test": -0.12264532997679156,
+      "NB10_MAPE": 26.551118853326034,
+      "delta_MAPE": 0.05877838577611527,
+      "improved": true,
+      "best_lstm_units": 16,
+      "best_dense_units": 32,
+      "best_dropout": 0.1,
+      "best_learning_rate": 0.0005,
+      "best_batch_size": 16
+    },
+    {
+      "split": "90:10",
+      "MAE_test": 6931.288411458333,
+      "RMSE_test": 8740.217725532666,
+      "MAPE_test": 17.66644888236255,
+      "R2_test": -0.055586570071026964,
+      "NB10_MAPE": 17.25137737506791,
+      "delta_MAPE": -0.4150715072946376,
+      "improved": false,
+      "best_lstm_units": 16,
+      "best_dense_units": 16,
+      "best_dropout": 0.25,
+      "best_learning_rate": 0.0005,
+      "best_batch_size": 16
+    }
+  ]
+}
